@@ -4,12 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClientDashboardComponent } from './client-dashboard/client-dashboard.component';
+import { MarketDashboardComponent } from './market-dashboard/market-dashboard.component';
+import { FavoriteCoinsComponent } from './favorite-coins/favorite-coins.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClientDashboardComponent
+    MarketDashboardComponent,
+    FavoriteCoinsComponent
   ],
   imports: [
     BrowserModule,

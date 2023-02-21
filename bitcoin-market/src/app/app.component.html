@@ -1,1 +1,10 @@
-<app-client-dashboard></app-client-dashboard>
+<nav class="navbar">
+    <div class="navbar-buttons">
+        <div class="button" [routerLink]="'dashboard'" routerLinkActive="button-active">Home</div>
+        <div class="button" [routerLink]="'favorite'" routerLinkActive="button-active">Favorite</div>
+    </div>
+
+
+
+</nav>
+<router-outlet></router-outlet>

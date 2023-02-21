@@ -3,11 +3,11 @@ import { Coin, Person } from '../models';
 import { MarketService } from '../services/market.service';
 
 @Component({
-  selector: 'app-client-dashboard',
-  templateUrl: './client-dashboard.component.html',
-  styleUrls: ['./client-dashboard.component.scss']
+  selector: 'app-market-dashboard',
+  templateUrl: './market-dashboard.component.html',
+  styleUrls: ['./market-dashboard.component.scss']
 })
-export class ClientDashboardComponent implements OnInit {
+export class MarketDashboardComponent implements OnInit {
 
   list: Coin[];
 
