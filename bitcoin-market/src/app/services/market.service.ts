@@ -1,15 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Person } from '../models';
+import { Coin, Person } from '../models';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ClientService {
+export class MarketService {
 
   constructor(private http: HttpClient) { }
 
   getPersons(){
-    return this.http.get<Person[]>("http://localhost:3000/clients")
+    return this.http.get<Coin[]>("http://localhost:3000/markets")
   }
 }

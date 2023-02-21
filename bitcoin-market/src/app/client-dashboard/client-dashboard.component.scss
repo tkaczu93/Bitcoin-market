@@ -1,0 +1,53 @@
+.container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .main-content{
+        width: 1000px;
+        background-color: aliceblue;
+        border-radius: 3px;
+        border: 1px solid grey;
+        padding: 30px;
+        
+        .market-list{
+            
+            background-color: white;
+            border-radius: 3px;
+            border: 1px solid grey;
+            padding: 15px;
+            
+            .row{
+                padding-left: 30px;
+                padding-right: 200px;
+                background-color: aliceblue;
+                border-radius: 3px;
+                border: 1px solid grey;
+                margin-bottom: 15px;
+
+                .coin-value{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .red {
+                        color: red;
+
+                    }
+
+                    .green {
+
+                        color: lime;
+                    }
+
+
+                }
+
+            }
+
+
+        }
+       
+    }
+
+}
+

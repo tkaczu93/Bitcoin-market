@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from '../models';
-import { ClientService } from '../services/client.service';
+import { Coin, Person } from '../models';
+import { MarketService } from '../services/market.service';
 
 @Component({
   selector: 'app-client-dashboard',
@@ -9,17 +9,17 @@ import { ClientService } from '../services/client.service';
 })
 export class ClientDashboardComponent implements OnInit {
 
-  list: Person[];
+  list: Coin[];
 
-  constructor (private clientService:ClientService){}
+  constructor (private marketService:MarketService){}
   ngOnInit(): void {
     this.getPersons()
   }
 
   getPersons(){
-    this.clientService.getPersons().subscribe({
+    this.marketService.getPersons().subscribe({
       next:(res) => {
-        this.list = res
+        this.list = res.slice(0, 100);
         console.log(res);
       }
     })

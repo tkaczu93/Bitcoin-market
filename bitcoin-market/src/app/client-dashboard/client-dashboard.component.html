@@ -1,5 +1,17 @@
-<p>client-dashboard works!</p>
+<div class="container">
+    <div class="main-content">
+        <h1>Selected Coins:</h1>
+        <div class="market-list">
+            <div *ngFor="let item of list" class="row">
+                <h4>{{item.symbol}}</h4>
+                <div class="coin-value">
+                    <p>Last: {{item.lastTradeRate}}</p>
+                    <p>Bid: <span class="red">{{item.bidRate}}</span></p>
+                    <p>Ask: <span class="green">{{item.askRate}}</span></p>
+                </div>
+                
+            </div>
 
-<button (click)="getPersons()">Button</button>
-
-<div *ngFor="let item of list">{{item?.firstName}}{{item?.lastName}}</div>
+        </div>
+    </div>
+</div>
