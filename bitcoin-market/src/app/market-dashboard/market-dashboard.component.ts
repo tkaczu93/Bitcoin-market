@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Coin, Person } from '../models';
+import { Coin } from '../models';
 import { MarketService } from '../services/market.service';
 
 @Component({
@@ -13,11 +13,11 @@ export class MarketDashboardComponent implements OnInit {
 
   constructor (private marketService:MarketService){}
   ngOnInit(): void {
-    this.getPersons()
+    this.getMarkets()
   }
 
-  getPersons(){
-    this.marketService.getPersons().subscribe({
+  getMarkets(){
+    this.marketService.getMarkets().subscribe({
       next:(res) => {
         this.list = res.slice(0, 100);
         console.log(res);
@@ -25,4 +25,12 @@ export class MarketDashboardComponent implements OnInit {
     })
   }
 
+  addToFavorite(dodanyCoin: Coin){
+    this.marketService.addToFavorite(dodanyCoin).subscribe({
+      next: () => {
+        window.alert("Coin has been successfuly added")
+      }
+    })
+  }
+  
 }

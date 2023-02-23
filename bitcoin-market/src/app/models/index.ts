@@ -1,11 +1,6 @@
-export interface Person {
-    id: string
-    firstName: string
-    lastName: string
-    birth: string
-    industry: string
-}
+
 export interface Coin {
+    id: number
     symbol: string
     lastTradeRate: string
     bidRate: string

@@ -1,1 +1,24 @@
-<div class="container"></div>
+<div class="container">
+    <div class="main-content">
+        <h1>Selected Coins:</h1>
+        <div class="market-list">
+            <div *ngFor="let item of list" class="row">
+                <div class="row-top">
+                    <h4>{{item.symbol}}</h4>
+                    <Button >- Delete </Button>
+
+                </div>
+                <div class="coin-value">
+                    <p>Last: {{item.lastTradeRate}}</p>
+                    <p>Bid: <span class="red">{{item.bidRate}}</span></p>
+                    <p>Ask: <span class="green">{{item.askRate}}</span></p>
+                </div>
+                <div class="last-update">
+                    <p> Last Update: {{item.updatedAt | date: "dd-MM-yyyy, H:mm"}} </p>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>

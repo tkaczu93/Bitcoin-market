@@ -1,6 +1,55 @@
 {
-  "markets":
-  [
+  "favorite": [
+    {
+      "id": 1,
+      "symbol": "1ECO-BTC",
+      "lastTradeRate": "0.000025550000",
+      "bidRate": "0.000022770000",
+      "askRate": "0.000026490000",
+      "updatedAt": "2023-02-14T15:01:30.8904516Z"
+    },
+    {
+      "id": 2,
+      "symbol": "1ECO-USDT",
+      "lastTradeRate": "0.566360000000",
+      "bidRate": "0.493510000000",
+      "askRate": "0.584570000000",
+      "updatedAt": "2023-02-14T15:04:46.9551311Z"
+    },
+    {
+      "id": 3,
+      "symbol": "1INCH-BTC",
+      "lastTradeRate": "0.000024740000",
+      "bidRate": "0.000024320000",
+      "askRate": "0.000024570000",
+      "updatedAt": "2023-02-14T15:00:46.9140521Z"
+    },
+    {
+      "symbol": "4ART-BTC",
+      "lastTradeRate": "0.000000220000",
+      "bidRate": "0.000000220000",
+      "askRate": "0.000000240000",
+      "updatedAt": "2023-02-14T14:56:30.4876852Z",
+      "id": 4
+    },
+    {
+      "symbol": "AAVE-USD",
+      "lastTradeRate": "83.670000000000",
+      "bidRate": "82.781000000000",
+      "askRate": "83.470000000000",
+      "updatedAt": "2023-02-14T15:05:18.9954915Z",
+      "id": 5
+    },
+    {
+      "symbol": "AAVE-EUR",
+      "lastTradeRate": "74.155000000000",
+      "bidRate": "72.237000000000",
+      "askRate": "88.224000000000",
+      "updatedAt": "2023-02-14T14:46:11.7127157Z",
+      "id": 6
+    }
+  ],
+  "markets": [
     {
       "symbol": "1ECO-BTC",
       "lastTradeRate": "0.000025550000",

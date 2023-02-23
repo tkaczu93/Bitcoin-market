@@ -1,15 +1,26 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Coin, Person } from '../models';
+import { Coin } from '../models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MarketService {
 
+  marketsUrl: string = "http://localhost:3000/markets"
+  favoriteUrl: string = "http://localhost:3000/favorite"
+
   constructor(private http: HttpClient) { }
 
-  getPersons(){
-    return this.http.get<Coin[]>("http://localhost:3000/markets")
+  getMarkets(){
+    return this.http.get<Coin[]>(this.marketsUrl)
+  }
+  
+  getFavorite(){
+    return this.http.get<Coin[]>(this.favoriteUrl)
+  }
+
+  addToFavorite (dodanyCoin: Coin){
+    return this.http.post(this.favoriteUrl, dodanyCoin)
   }
 }

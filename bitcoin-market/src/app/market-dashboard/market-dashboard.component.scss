@@ -18,13 +18,40 @@
             
             .row{
                 padding-left: 30px;
-                padding-right: 200px;
                 background-color: aliceblue;
                 border-radius: 3px;
                 border: 1px solid grey;
                 margin-bottom: 15px;
+                padding-right: 30px;
 
+                .row-top {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    button{
+                        height: 30px;
+                        background-color: #038857;
+                        color: white;
+                        transition: .3s;
+                        &:hover{
+                            background-color: black;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+                
+                .last-update{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: right;
+                    font-size: 10px;
+                    color: grey;
+                }
+                
                 .coin-value{
+                    padding-right: 200px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
