@@ -8,7 +8,7 @@ import { Coin } from '../models';
 export class MarketService {
 
   marketsUrl: string = "http://localhost:3000/markets"
-  favoriteUrl: string = "http://localhost:3000/favorite"
+  favoriteUrl: string = "http://localhost:3000/favorite/"
 
   constructor(private http: HttpClient) { }
 
@@ -23,4 +23,9 @@ export class MarketService {
   addToFavorite (dodanyCoin: Coin){
     return this.http.post(this.favoriteUrl, dodanyCoin)
   }
+
+  deleteFromFavorite (idDoUsuniecia: number){
+    return this.http.delete(this.favoriteUrl + idDoUsuniecia)
+  }  
+    
 }

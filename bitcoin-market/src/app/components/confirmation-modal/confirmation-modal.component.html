@@ -1,0 +1,13 @@
+<div class="confirmation-modal">
+    <div class="modal-content">
+        <div class="header"><div class="button" (click)="closeModal()">x</div></div>
+        
+        <span>{{modalMessage}}</span>
+        <div class="btn">
+            <div class="btn-yes"(click)="confirmModal()" [ngClass]="[yesButtonStyle]">Yes</div>
+            <div class="btn-no" (click)="closeModal()">No</div>
+        </div>
+
+
+    </div>
+</div>

@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MarketDashboardComponent } from './market-dashboard/market-dashboard.component';
 import { FavoriteCoinsComponent } from './favorite-coins/favorite-coins.component';
+import { ConfirmationModalComponent } from './components/confirmation-modal/confirmation-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarketDashboardComponent,
-    FavoriteCoinsComponent
+    FavoriteCoinsComponent,
+    ConfirmationModalComponent
   ],
   imports: [
     BrowserModule,
